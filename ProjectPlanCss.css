@@ -1,0 +1,149 @@
+* {
+	margin: 5px;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+body {
+	background: #808080;
+	box-sizing: border-box;
+}
+
+.jumbotron {
+	text-align: center;
+	background: #800080;
+	border: 3px solid black;
+}
+ 
+.description {
+	text-align: center;
+}
+
+.Milestones {
+	text-align: center;
+	margin: auto;
+	background: #800080;
+	border: 5px solid yellow;
+	height: 255px;
+ 	max-width: 500px;
+ 	position: relative;
+ 	right: 0px;
+ 	font-family: "Times New Roman", Times, serif;
+}
+
+.TeamSchedule{
+	text-align: center;
+	margin: auto;
+	background: #800080;
+	border: 5px solid yellow;
+	height: 225px;
+ 	max-width: 500px;
+ 	position: relative;
+ 	left: 0px;
+ 	font-family: "Times New Roman", Times, serif;
+}
+
+.TimePermits{
+	text-align: center;
+	padding: auto;
+	margin: auto;
+	background: #800080;
+	border: 5px solid yellow;
+ 	max-width: 500px;
+ 	position: relative;
+ 	font-family: "Times New Roman", Times, serif;
+}
+
+.LocalMultiplayer{
+	text-align: center;
+	margin: auto;
+	background: #800080;
+	border: 5px solid yellow;
+	height: 150px;
+ 	max-width: 500px;
+ 	position: absolute;
+ 	left: 0px;
+}
+
+.Universal {
+	text-align: center;
+	margin: auto;
+	background: #800080;
+	border: 5px solid yellow;
+	height: 150px;
+ 	max-width: 500px;
+ 	position: absolute;
+ 	right: 0px;
+}
+
+.Fireboy {
+	display: block;
+  	margin-left: 0;
+  	margin-right: auto;
+}
+.DisProgress {
+	text-align: center;
+	margin: auto;
+	background: #800080;
+	border: 5px solid yellow;
+	height: 150px;
+ 	max-width: 500px;
+ 	position: relative;
+ 	font-family: "Times New Roman", Times, serif;
+}
+
+.Enemy {
+	text-align: center;
+	margin: auto;
+	background: #800080;
+	border: 5px solid yellow;
+	height: 125px;
+ 	max-width: 500px;
+ 	position: relative;
+ 	font-family: "Times New Roman", Times, serif;
+}
+
+.Lost {
+	text-align: center;
+	margin: auto;
+	background: #800080;
+	border: 5px solid yellow;
+	height: auto;
+ 	max-width: 500px;
+ 	position: relative;
+ 	font-family: "Times New Roman", Times, serif;
+ 	font-weight: bold;
+}
+.ItemsLost {
+	text-align: center;
+	margin: auto;
+	background: #800080;
+	border: 5px solid yellow;
+	height: 150px;
+ 	max-width: 500px;
+ 	position: relative;
+ 	font-family: "Times New Roman", Times, serif;
+}
+
+h5 {
+	font-weight: bold;
+}
+h6 {
+	font-weight: bold;
+}
+p2 {	
+	color: black;
+	font-style:Arial;
+	font-family:Calibri;
+	font-size:25px;
+	margin-left: 500px;
+	margin-right: 500px;
+
+p1 {
+	color: black;
+	font-style:Arial;
+	font-family:Calibri;
+	font-size:25px;
+	margin-left: 500px;
+	margin-right: 500px;
+}
