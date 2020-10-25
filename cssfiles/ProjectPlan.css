@@ -3,16 +3,19 @@
 	padding: 8px;
 	box-sizing: border-box;
 }
-
+title
+{
+    color: white;
+}
 body {
-	background: #808080;
+	background: #532197;
 	box-sizing: border-box;
 }
 
 .jumbotron {
 	text-align: center;
-	background: #800080;
-	border: 3px solid black;
+	background: #201754;
+	border: 3px solid white;
 }
  
 .description {
@@ -22,44 +25,44 @@ body {
 .Milestones {
 	text-align: center;
 	margin: auto;
-	background: #800080;
-	border: 5px solid yellow;
-	height: 255px;
+	background: #201754;
+	border: 5px solid #cfb209;
+	height: 315px;
  	max-width: 500px;
  	position: relative;
  	right: 0px;
- 	font-family: "Times New Roman", Times, serif;
+ 	font-family:Calibri;
 }
 
 .TeamSchedule{
 	text-align: center;
 	margin: auto;
-	background: #800080;
-	border: 5px solid yellow;
+	background: #201754;
+	border: 5px solid #cfb209;
 	height: 225px;
  	max-width: 500px;
  	position: relative;
  	left: 0px;
- 	font-family: "Times New Roman", Times, serif;
+ 	font-family:Calibri;
 }
 
 .TimePermits{
 	text-align: center;
 	padding: auto;
 	margin: auto;
-	background: #800080;
-	border: 5px solid yellow;
+	background: #201754;
+	border: 5px solid #cfb209;
  	max-width: 500px;
  	position: relative;
- 	font-family: "Times New Roman", Times, serif;
+ 	font-family:Calibri;
 	font-size:25px;
 }
 
 .LocalMultiplayer{
 	text-align: center;
 	margin: auto;
-	background: #800080;
-	border: 5px solid yellow;
+	background: #201754;
+	border: 5px solid #cfb209;
 	height: 150px;
  	max-width: 500px;
  	position: absolute;
@@ -69,8 +72,8 @@ body {
 .Universal {
 	text-align: center;
 	margin: auto;
-	background: #800080;
-	border: 5px solid yellow;
+	background: #201754;
+	border: 5px solid #cfb209;
 	height: 150px;
  	max-width: 500px;
  	position: absolute;
@@ -85,47 +88,54 @@ body {
 .DisProgress {
 	text-align: center;
 	margin: auto;
-	background: #800080;
-	border: 5px solid yellow;
+	background: #201754;
+	border: 5px solid #cfb209;
 	height: 150px;
  	max-width: 500px;
  	position: relative;
- 	font-family: "Times New Roman", Times, serif;
+ 	font-family:Calibri;
 }
 
 .Enemy {
 	text-align: center;
 	margin: auto;
-	background: #800080;
-	border: 5px solid yellow;
+	background: #201754;
+	border: 5px solid #cfb209;
 	height: 125px;
  	max-width: 500px;
  	position: relative;
- 	font-family: "Times New Roman", Times, serif;
+ 	font-family:Calibri;
 }
 
 .Lost {
 	text-align: center;
 	margin: auto;
-	background: #800080;
-	border: 5px solid yellow;
+	background: #201754;
+	border: 5px solid #cfb209;
 	height: auto;
  	max-width: 500px;
  	position: relative;
- 	font-family: "Times New Roman", Times, serif;
+ 	font-family:Calibri;
  	font-weight: bold;
 }
 .ItemsLost {
 	text-align: center;
 	margin: auto;
-	background: #800080;
-	border: 5px solid yellow;
+	background: #201754;
+	border: 5px solid #cfb209;
 	height: 150px;
  	max-width: 500px;
  	position: relative;
- 	font-family: "Times New Roman", Times, serif;
+ 	font-family:Calibri;
 }
-
+    h1
+    {
+        text-align: center;
+    background-color: #cfb209;
+    box-sizing: border-box;
+    border: 3px solid white;
+    color: white;
+    }
 h5 {
 	font-weight: bold;
 }
@@ -133,16 +143,16 @@ h6 {
 	font-weight: bold;
 }
 p2 {	
-	color: black;
-	font-style:Arial;
+	color: white;
+
 	font-family:Calibri;
 	font-size:25px;
 	margin-left: 500px;
 	margin-right: 500px;
 
 p1 {
-	color: black;
-	font-style:Arial;
+	color: white;
+
 	font-family:Calibri;
 	font-size:25px;
 	margin-left: 500px;
