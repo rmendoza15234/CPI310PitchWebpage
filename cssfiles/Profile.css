@@ -43,3 +43,11 @@ caption {
  	font-family: "Times New Roman", Times, serif;
  	font-size: 25px;
  }
+ h1
+ {
+	 text-align: center;
+ background-color: #cfb209;
+ box-sizing: border-box;
+ border: 3px solid white;
+ color: white;
+ }

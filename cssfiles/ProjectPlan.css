@@ -128,14 +128,14 @@ body {
  	position: relative;
  	font-family:Calibri;
 }
-    h1
-    {
-        text-align: center;
-    background-color: #cfb209;
-    box-sizing: border-box;
-    border: 3px solid white;
-    color: white;
-    }
+h1
+{
+	text-align: center;
+background-color: #cfb209;
+box-sizing: border-box;
+border: 3px solid white;
+color: white;
+}
 h5 {
 	font-weight: bold;
 }
