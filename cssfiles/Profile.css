@@ -51,3 +51,8 @@ caption {
  border: 3px solid white;
  color: white;
  }
+
+.Fireboy {
+	display: block;
+  	margin-left: 0;
+  	margin-right: auto;
