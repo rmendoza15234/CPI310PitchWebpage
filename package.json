@@ -20,5 +20,10 @@
   "homepage": "https://github.com/rmendoza15234/CPI310PitchWebpage#readme",
   "devDependencies": {
     "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite": "^4.0.17",
+    "sqlite3": "^5.0.0"
   }
 }
