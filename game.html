@@ -5,8 +5,9 @@
         <link href="cssfiles/style.css" rel = "stylesheet" type ="text/css">
         
     </head>
-    <body style="background-color: #532197" id="border" id="font_body" onload="startGame()">
+    <body style="background-color: #532197" id="border" id="font_body" >
         <div>
+            <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.08)">JUMP</button>
         <ul style="background-color: #201754" id="border">
             <li><a  href="index.html" style="color: white" >Home</a></li>
             <li><a class="active" href="game.html" style="color: white">Game Page</a></li>
@@ -15,29 +16,31 @@
             <li><a href="specifications.html" style="color: white">Specifications</a></li>
             <li><a href="ProfilePage.html" style="color: white">Your Profile</a></li>
         </ul>
+        
     </div>
         <div>
             <br>
-            <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-                <p>Use the ACCELERATE button to stay in the air</p>
-                <p>How long can you stay alive?</p>
+            
+
             <script>
 
-                var myGamePiece;
-                var myObstacles = [];
-                var myScore;
+                //the player object
+                var flappyBird;
+                //array of all the pipes to be generated
+                var pipes = [];
+                //score to keep track of points
+                var score;
                 
                 function startGame() {
-                    myGamePiece = new component(30, 30, "red", 10, 120);
-                    myGamePiece.gravity = 0.05;
-                    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+                    flappyBird = new component(30, 30, "yellow", 10, 120);
+                    flappyBird.gravity = 0.05;
+                    score = new component("30px", "Consolas", "black", 280, 40, "text");
                     myGameArea.start();
                 }
-                
                 var myGameArea = {
                     canvas : document.createElement("canvas"),
                     start : function() {
-                        this.canvas.width = 480;
+                        this.canvas.width = 720;
                         this.canvas.height = 450;
                         this.context = this.canvas.getContext("2d");
                         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
@@ -48,6 +51,14 @@
                         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
                     }
                 }
+                let isStarted = 0;
+                if(isStarted == 0)
+                {
+                    startGame();
+                    isStarted = 1;
+                }
+            
+                
                 
                 function component(width, height, color, x, y, type) {
                     this.type = type;
@@ -103,8 +114,8 @@
                 
                 function updateGameArea() {
                     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
-                    for (i = 0; i < myObstacles.length; i += 1) {
-                        if (myGamePiece.crashWith(myObstacles[i])) {
+                    for (i = 0; i < pipes.length; i += 1) {
+                        if (flappyBird.crashWith(pipes[i])) {
                             return;
                         } 
                     }
@@ -118,17 +129,17 @@
                         minGap = 50;
                         maxGap = 200;
                         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-                        myObstacles.push(new component(10, height, "green", x, 0));
-                        myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+                        pipes.push(new component(10, height, "grey", x, 0));
+                        pipes.push(new component(10, x - height - gap, "grey", x, height + gap));
                     }
-                    for (i = 0; i < myObstacles.length; i += 1) {
-                        myObstacles[i].x += -1;
-                        myObstacles[i].update();
+                    for (i = 0; i < pipes.length; i += 1) {
+                        pipes[i].x += -1;
+                        pipes[i].update();
                     }
-                    myScore.text="SCORE: " + myGameArea.frameNo;
-                    myScore.update();
-                    myGamePiece.newPos();
-                    myGamePiece.update();
+                    score.text="SCORE: " + myGameArea.frameNo;
+                    score.update();
+                    flappyBird.newPos();
+                    flappyBird.update();
                 }
                 
                 function everyinterval(n) {
@@ -137,11 +148,11 @@
                 }
                 
                 function accelerate(n) {
-                    myGamePiece.gravity = n;
+                    flappyBird.gravity = n;
                 }
                 </script>    
                 <br>
             </div> 
-
+            
     </body>
 </html>
